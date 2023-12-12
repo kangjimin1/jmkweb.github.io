@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang = "ko">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style1.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="intro_bg">
+                <div class ="header" id="link_header">
+                    <div class="searchArea">
+                        <form>
+                            <input type="search" placeholder="Search">
+                            <span>검색</span>
+                        </form>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="#link_header">HOME</a></li>
+                        <li><a href="#link_main_text0">ABOUT</a></li>
+                        <li><a href="#link_main_text1">SERVICE</a></li>
+                        <li><a href="#link_main_text2">CONTACT</a></li>
+                        <li><a href="#" id="loginButton">로그인/회원가입</a></li>
+                        
+                    </ul>
+                    <div id="loginForm" style="display: none;">
+                        <form id="loginFormContent">
+                            <label for="username">아이디:</label>
+                            <input type="text" id="username" name="username" required>
+                            <br>
+                            <label for="password">비밀번호:</label>
+                            <input type="password" id="password" name="password" required>
+                            <br>
+                            <button type="button" onclick="attemptLogin()">로그인</button>
+                        </form>
+                        <div id="loginMessage"></div>
+                    </div>
+                </div>
+                <div class="intro_text">
+                    <h1>JMK CINEMA</h1>
+                    <h4 class="content1">JMK is an innovation</h4>
+                </div>
+            </div>
+            </div>
+            <!-- intro end-->
+            <ul class="amount">
+                <li>
+                    <div>
+                        <div class="content1">JMK CINEMA 실시간 접속자 수</div>
+                        <div class="result">201,376</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="content1">12월 신규 업데이트 콘텐츠 갯수</div>
+                        <div class="result">1891</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="content1">오늘의 신규 가입자 수</div>
+                        <div class="result">1708</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="content1">1월 신규 업데이트 예정 콘텐츠 갯수 </div>
+                        <div class="result">2012</div>
+                    </div>
+                </li>
+            </ul>
+            <!--amount end-->
+
+            <div class="main_text0" id="link_main_text0">
+                <h1>ABOUT</h1>
+                <div class="content1">대한민국 최대 히트작이 기다립니다! </div>
+
+                <ul class="icons">
+                    <li>
+                        <div class="icon_img">
+                            <img src="image/icon0.svg">
+                        </div>
+                        <div class="content1_bold">기업정보</div>
+                        <div class="content1">대표전화 : 010 -4546-1649<br>
+                            본사주소 : 서울시 강동구
+                        </div>
+                        <div class="more">
+                            MORE
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon_img">
+                            <img src="image/icon1.svg">
+                        </div>
+                        <div class="content1_bold">이용권 </div>
+                        <div class="content1">최대 40% 할인 !<br> 한 계정당 최대 6인까지 사용가능 !
+                        </div>
+                        <div class="more">
+                            MORE
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon_img">
+                            <img src="image/icon2.svg">
+                        </div>
+                        <div class="content1_bold">고객센터</div>
+                        <div class="content1">24시간 문의 가능!
+                        </div>
+                        <div class="more">
+                            MORE
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main_text1" id="link_main_text1">
+                <h1>SERVICE</h1>
+                <div class="content1">알고리즘을 통한 장르별 컨텐츠 추천</div>
+                <div class="service">
+                    <div class="genre_photo">
+                        <img src="image/genre.svg">        
+                    </div>
+                    <div class="content2">
+                        <h2>장르별 추천작품</h2><br>
+                        <li><a href="https://www.tving.com/more/genre/MG130">로맨스(클릭시 바로가기)</a></li><br>
+                        <li><a href="https://www.tving.com/more/genre/MG110">코미디(클릭시 바로가기)</a></li><br>
+                        <li><a href="https://www.tving.com/more/genre/MG240">애니메이션(클릭시 바로가기)</a></li><br>
+                        <li><a href="https://www.tving.com/more/genre/MG140">스릴러(클릭시 바로가기)</a></li><br>
+                        <li><a href="https://www.tving.com/more/genre/MG150">미스테리(클릭시 바로가기)</a></li><br>
+                        <li><a href="https://www.tving.com/more/genre/MG170">모험(클릭시 바로가기)</a></li><br>
+                        <li><a href="https://www.tving.com/more/genre/MG120">액션(클릭시 바로가기)</a></li><br>
+                        <li><a href="https://www.tving.com/more/genre/MG200">판타지(클릭시 바로가기)</a></li><br>
+                    </div>
+                </div>
+
+                <div class="main_text2" id="link_main_text2">
+                    <ul>
+                        <li>
+                            <div><h1>CONTECT</h1></div>
+                            <div>연간회원권을 구매하여, 우리의 고객이 되어주세요</div>
+                            <div class="more2">
+                                더 알아보기
+                            </div>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <footer>
+                    <div>
+                        LOGO
+                    </div>
+                    <div>
+                        ceo. 강지민<br>
+                        Adde. 서울특별시 강동구 지민타워 21F 고객상담실 Fax/Tel.<br>
+                        010-4546-1649<br>
+                        COPYRIGHT 2023. JMK . ALL RIGHT RESERVED.
+
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script>
+            const loginButton = document.getElementById('loginButton');
+            const loginForm = document.getElementById('loginForm');
+            const loginFormContent = document.getElementById('loginFormContent');
+            const loginMessage = document.getElementById('loginMessage');
+        
+            loginButton.addEventListener('click', () => {
+                loginForm.style.display = 'block';
+            });
+        
+            function attemptLogin() {
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+        
+                // Check if username and password match your predefined values
+                if (username === 'jimin' && password === '1234') {
+                    loginMessage.innerText = '로그인 되었습니다.';
+                    // You may want to redirect or perform additional actions upon successful login
+                } else {
+                    loginMessage.innerText = '로그인 정보가 일치하지 않습니다.';
+                }
+            }
+        </script>
+    </body>
+</html>
